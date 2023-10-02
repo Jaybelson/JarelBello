@@ -19,7 +19,9 @@ This Demonstration outlines the prerequisites and installation of the open-sourc
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
+- Install / Enable IIS in Windows WITH
+CGI and Common HTTP Features
+
 - Item 2
 - Item 3
 - Item 4
