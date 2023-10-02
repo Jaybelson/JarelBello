@@ -22,7 +22,7 @@ This Demonstration outlines the prerequisites and installation of the open-sourc
 - Install / Enable IIS in Windows WITH
 CGI and Common HTTP Features
 
-- Item 2
+-  Install PHP Manager for IIS 
 - Item 3
 - Item 4
 - Item 5
