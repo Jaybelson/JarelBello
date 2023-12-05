@@ -22,7 +22,7 @@ This Demonstration outlines the prerequisites and installation of the open-sourc
 - Install / Enable IIS in Windows WITH
 CGI and Common HTTP Features
 
--  Install PHP Manager for IIS 
+- Install PHP Manager for IIS 
 - Install the Rewrite Module
 - Create the directory C:\PHP
 - Download PHP 7.3.8 
@@ -31,7 +31,7 @@ CGI and Common HTTP Features
 - Open IIS as an Admin
 - Register PHP from within IIS
 - Install osTicket v1.15.8
-- 
+- Log in and Test
 <h2>Installation Steps</h2>
 1.
 
@@ -40,10 +40,11 @@ CGI and Common HTTP Features
 </p>
 <p>
 In control panel find-> programs ->Turn Windows features on and off-> Install / Enable IIS in Windows WITH
-CGI and Common HTTP Features
+CGI and Common HTTP Features:
+	
 World Wide Web Services -> Application Development Features ->
 [X] CGI
-[X] Common HTTP Features
+
 AND IIS Management Console
 Internet Information Services -> Web Management Tools -> IIS Management Console
 	[X] IIS Management Console
@@ -122,6 +123,7 @@ Search and open Internet Infromation Services (IIS). Locate and open PHP Manager
 
 9 .
 
+<img width="683" alt="Screen Shot 2023-12-04 at 11 08 57 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/a050e4fe-ded5-42d0-95e8-edcb293666aa">
 <img width="1275" alt="Screen Shot 2023-10-02 at 8 48 58 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/79e8ffd3-8eda-4ed5-bcab-d7f902ef36f9">
 <img width="638" alt="Screen Shot 2023-10-02 at 9 10 41 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/317b11cf-8619-4c9b-801f-bd445046c15d">
 
