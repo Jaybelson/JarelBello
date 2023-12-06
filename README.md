@@ -117,7 +117,7 @@ Download the MySQL Installer. Create the root password in the installer, then ex
 </p>
 <br /
 
-Search and open Internet Infromation Services (IIS). Locate and open PHP Manager. Click register new PHP version. Browse for C:\PHP and hit OK. 
+Search and open Internet Infromation Services (IIS). Locate and open PHP Manager. Click register new PHP version. Browse for C:\PHP -> php-cgi and hit OK. 
 </p>
 <br /
 
