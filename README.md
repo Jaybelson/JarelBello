@@ -28,13 +28,16 @@ CGI and Common HTTP Features
 - Download PHP 7.3.8 
 - Install VC_redist.x86.exe.
 - Install MySQL 5.5.62
-- Open IIS as an Admin
-- Register PHP from within IIS
+- Open IIS as an Admin and Register PHP from within IIS
 - Install osTicket v1.15.8
-- Log in and Test
+- Reset and open osTicket installer
+- Enable or disable extensions
+- Configuring permissions
+- Accessing MySQL Database
+- Fill out and Install osTicket
 <h2>Installation Steps</h2>
-1.
 
+1. Install / Enable IIS in Windows WITH CGI and Common HTTP Features
 <p>
 <img <img width="320" alt="Screen Shot 2023-10-02 at 5 45 34 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/175612eb-7b5e-43c3-9c4f-66b4e3111848">
 </p>
@@ -51,7 +54,8 @@ Internet Information Services -> Web Management Tools -> IIS Management Console
 
 </p>
 <br />
-2.
+
+2. Install PHP Manager for IIS 
 <p>
 <img width="555" alt="Screen Shot 2023-10-02 at 6 03 03 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/f52b19e1-6178-4149-9268-99da6a2494a4">
 
@@ -60,14 +64,16 @@ Internet Information Services -> Web Management Tools -> IIS Management Console
 Download and Install PHP Manager for IIS
 </p>
 <br />
-3.
+
+3. Install the Rewrite Module
 <p>
 <img width="523" alt="Screen Shot 2023-10-02 at 6 07 41 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/d63d45cf-70be-4a6f-8554-ad99666aa9ac">
   
 Download and Install the Rewrite Module
 </p>
 <br />
-4.
+
+4.  Create the directory C:\PHP 
 <img width="970" alt="Screen Shot 2023-10-02 at 6 20 01 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/bdd03c06-0409-4ac0-8ef7-309f6e339d14">
 <img width="911" alt="Screen Shot 2023-10-02 at 6 20 12 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/e444f246-3eb9-4682-b204-27fc5d09fe10">
 </p>
@@ -76,18 +82,19 @@ Create the directory C:\PHP
 </p>
 <br /
 
-5 .
+5 . Download PHP 7.3.8
 <p>
 <img width="523" alt="Screen Shot 2023-10-02 at 6 11 25 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/47d9c4fe-bb32-4dcd-a47e-f3d433a18e74">
 <img width="782" alt="Screen Shot 2023-10-02 at 6 27 23 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/bf270b7b-8264-4370-a2df-af9e338e0589">
 <img width="790" alt="Screen Shot 2023-10-02 at 6 30 36 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/fcfe6104-9f33-4f11-bff0-99f7be032b60">
+	
 </p>
 <br />
 Download and Install PHP files. It will be zipped and downloaded in the downloads folder in File Explorer. From the File Explorer download folder right-click the PhP zip file and extract. Then Browse to directory C:\PHP and dump all files 
 </p>
 <br 
 	
-6 .
+6 . Install VC_redist.x86.exe.
 
 <img width="521" alt="Screen Shot 2023-10-02 at 6 58 22 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/feda9458-d5be-41bf-a513-2f0c2805d2cc">
 </p>
@@ -95,7 +102,7 @@ Download and Install PHP files. It will be zipped and downloaded in the download
 Download and Install VC_redist.x86.exe.
 </p>
 <br />
-7 .
+7 . Install MySQL 5.5.62
 </p>
 <img width="502" alt="Screen Shot 2023-10-02 at 8 13 52 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/afb93af8-3bd4-4ab3-8e72-296827416901">
 <img width="495" alt="Screen Shot 2023-10-02 at 8 14 40 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/35addaba-1008-497f-8d17-afc6d524a6cf">
@@ -107,7 +114,7 @@ Download the MySQL Installer. Create the root password in the installer, then ex
 </p>
 <br /
 
-8 .
+8 . Open IIS as an Admin and Register PHP from within IIS
 
 <img width="788" alt="Screen Shot 2023-10-02 at 8 26 47 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/eb0c36d7-62f8-430a-88f2-f1529e84904d">
 <img width="947" alt="Screen Shot 2023-10-02 at 8 27 04 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/0b518316-db86-40bb-bd03-0eb367489ed4">
@@ -117,11 +124,11 @@ Download the MySQL Installer. Create the root password in the installer, then ex
 </p>
 <br /
 
-Search and open Internet Infromation Services (IIS). Locate and open PHP Manager. Click register new PHP version. Browse for C:\PHP -> php-cgi and hit OK. 
+Search and open Internet Infromation Services (IIS) as Administrator. Locate and open PHP Manager. Click register new PHP version. Browse for C:\PHP -> php-cgi and hit OK. 
 </p>
 <br /
 
-9 .
+9 . Install osTicket v1.15.8
 
 <img width="683" alt="Screen Shot 2023-12-04 at 11 08 57 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/a050e4fe-ded5-42d0-95e8-edcb293666aa">
 <img width="1275" alt="Screen Shot 2023-10-02 at 8 48 58 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/79e8ffd3-8eda-4ed5-bcab-d7f902ef36f9">
@@ -134,7 +141,7 @@ Download the osTicket zip file and locate and open it in File Explorer. Locate t
 </p>
 <br /
 
-10 .
+10 . Reset and open osTicket installer
 
 <img width="931" alt="Screen Shot 2023-10-02 at 9 14 24 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/780a30b0-f7b6-44bf-b5b9-14d42c2b426f">
 <img width="942" alt="Screen Shot 2023-10-02 at 9 19 42 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/34c81b1a-cd33-435d-a6fd-aae08f5a5e9f">
@@ -145,7 +152,7 @@ Open IIS again and reset it. Then locate and open the osTicket folder in IIS. Cl
 </p>
 <br /
 
-11 .
+11 . Enable or disable extensions
 
 <img width="814" alt="Screen Shot 2023-10-02 at 9 36 19 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/7d258e97-dcd1-48c1-9f47-580ba63c3c68">
 <img width="890" alt="Screen Shot 2023-10-02 at 9 38 21 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/cb0766f6-e3f4-4992-8373-9b6fa1692aab">
@@ -159,7 +166,7 @@ osTicket recommends some extensions to be installed. Reopen IIS and open PHP Man
 </p>
 <br /
 
- 12 .
+ 12 . Configuring permission
 
  <img width="787" alt="Screen Shot 2023-10-02 at 9 55 08 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/3180cbc7-8b3a-491d-a71f-5bc1182b4f9c">
 <img width="776" alt="Screen Shot 2023-10-02 at 9 56 18 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/f084f12c-4b56-4720-b97f-6b04439515bd">
@@ -171,7 +178,7 @@ From Windows(C:) -> inetpub -> wwwroot -> osTicket -> Include. Locate the ost-sa
 </p>
 <br /
 
-13 .
+13 . Accessing MySQL Database
 
 <img width="583" alt="Screen Shot 2023-10-02 at 10 31 24 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/077e77f5-2066-487c-bb6c-2a8693728d66">
 <img width="680" alt="Screen Shot 2023-10-02 at 10 32 13 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/7679ddc6-f00f-4714-8291-cbbe05c1a19a">
@@ -186,7 +193,7 @@ To access MySQL database install the HeidiSQL client. Once Installed open HeidiS
 </p>
 <br /
 
-14 .
+14 .  Fill out and Install osTicket
 
 <img width="905" alt="Screen Shot 2023-10-02 at 10 25 42 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/46a2a6ad-b361-473f-acf9-d23142eae420">
 <img width="971" alt="Screen Shot 2023-10-02 at 10 52 38 PM" src="https://github.com/Jaybelson/osticket-prereqs/assets/146674787/7e6e752e-ef3f-4f7a-ae27-65113a9034fb">
@@ -194,4 +201,4 @@ To access MySQL database install the HeidiSQL client. Once Installed open HeidiS
 </p>
 <br /
 
-Finish filling out osTicket System settings, Admin user, and Database settings to complete osTicket installation. Note: MySQL database name was created in HeidiSQL. Once information is fully filled out click install and osTicket is officially installed.
+Finish filling out osTicket System settings, Admin user, and Database settings to complete osTicket installation. Note: MySQL database name was created in HeidiSQL. Once information is filled out click install and osTicket is officially installed.
